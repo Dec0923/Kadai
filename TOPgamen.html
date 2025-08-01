@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container-wrapper {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* 赤い四角の画像パスをここに挿入 */
+            background-image: url('image_77a105.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .form-container {
+            position: absolute;
+            top: 0%; /* 上からの位置を調整 */
+            right: 0%; /* 右からの位置を調整 */
+            z-index: 1; /* 画像より手前に表示 */
+            background-color: rgba(255, 255, 255, 0.9); /* フォームの背景色（見やすくするため） */
+            padding: 2rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+<main>
+    <div class="container-wrapper d-flex justify-content-center align-items-center">
+        <div class="image-container"></div>
+        <div class="form-container">
+            <h6 class="text-primary">楽曲キー検索システム</h6>
+            <form action="">
+                <h1 class="text-primary">新規登録</h1>
+                <p><span class="text-success">楽曲:</span> <input type="text" name="music"></p>
+                <button type="submit" class="btn btn-primary">決定</button>
+            </form>
+             <a href="music_list.html" class="btn btn-primary mt-2">楽曲一覧へ</a>
+             <a href="music_list.html" class="btn btn-primary mt-2">楽曲登録</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
